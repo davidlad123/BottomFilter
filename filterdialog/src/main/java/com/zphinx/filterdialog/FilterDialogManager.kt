@@ -115,7 +115,7 @@ class FilterDialogManager(val activity: AppCompatActivity,var groupDataFile:Stri
 
             gson.fromJson<ArrayList<FilterGroup>>(someGroups, groupType)
         } catch (e: Exception) {
-            Log.d(TAG,"error fetching jobs: ${e.message} with exception type:")
+            Log.d(TAG,"error fetching variants: ${e.message} with exception type:")
             e.printStackTrace()
             ArrayList()
         }

@@ -2,16 +2,16 @@ package com.zphinx.filterdialog
 
 
 /**
- * A helper class for dealing with the jobs on this app
+ * A helper class for dealing with the variants on this app
  */
 open class FilterHelper {
 
     /**
-     * Match a job based on the relationship diagram depicted by
+     * Match a variant based on the relationship diagram depicted by
      * A(e||f||g)  &&  B(a||b||c)  &&  C(d||e||f)
      *
      * @param searchFilter List<FilterGroup>
-     * @param filterable Job
+     * @param filterable A Filterable instance
      * @return Boolean
      */
     fun matchFilter(searchFilter: List<FilterGroup>, filterable: Filterable): Boolean {
@@ -47,7 +47,7 @@ open class FilterHelper {
      *
      * @param children Array<GroupChild>
      * @param groupName String?
-     * @param filterable Job
+     * @param filterable A Filterable instance
      * @return Int
      */
     private fun findMatchingChildren(children: Array<GroupChild>, groupName: String?, filterable: Filterable): Int {
