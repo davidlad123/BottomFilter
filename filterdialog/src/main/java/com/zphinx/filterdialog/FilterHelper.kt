@@ -2,7 +2,12 @@ package com.zphinx.filterdialog
 
 
 /**
- * A helper class for dealing with the variants on this app
+ * A helper class for dealing with the variants on this app.
+ *  Extend this class and override the method findFieldValue(fieldName: String?, filterable: Filterable): String.
+ *
+ *  The default implementation shown here is an example of how its done
+ *
+ * Filter helper contains a default implementation which should be overriden to accomodate your specific filter terms and names.
  */
 open class FilterHelper {
 
