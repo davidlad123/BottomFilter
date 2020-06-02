@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/filter_group_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="?android:expandableListPreferredItemPaddingLeft"
+        android:gravity="center_vertical|left"
+        android:paddingBottom="@dimen/len_8dp"
+        android:text="list item"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/filter_default_text_size" />
+
+</LinearLayout>

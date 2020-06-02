@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/len_2dp"
+        android:background="@drawable/rect_accent_bg"
+        android:gravity="center"
+        android:padding="@dimen/len_8dp"
+        android:text="@string/title_caps"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/filter_title_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/len_10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/text_caps"
+        android:textSize="@dimen/filter_default_text_size" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_1dp"
+        android:layout_margin="@dimen/len_8dp"
+        android:background="@color/colorAccent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/len_3dp"
+            android:layout_toLeftOf="@+id/okButton"
+            android:layout_toStartOf="@+id/okButton"
+            android:minHeight="@dimen/len_1dp"
+            android:text="@string/cancel_caps"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/filter_title_text_size" />
+
+        <Button
+            android:id="@id/okButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/len_3dp"
+            android:layout_marginStart="@dimen/len_3dp"
+            android:layout_marginLeft="@dimen/len_3dp"
+            android:minHeight="@dimen/len_1dp"
+            android:text="@string/confirm_caps"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/filter_title_text_size" />
+    </RelativeLayout>
+</LinearLayout>

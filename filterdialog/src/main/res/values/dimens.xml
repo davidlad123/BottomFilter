@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="filter_title_text_size">20sp</dimen>
+    <dimen name="len_2dp">2dp</dimen>
+    <dimen name="len_4dp">4dp</dimen>
+    <dimen name="len_10dp">10dp</dimen>
+    <dimen name="len_8dp">8dp</dimen>
+    <dimen name="filter_default_text_size">17sp</dimen>
+    <dimen name="len_1dp">1dp</dimen>
+    <dimen name="len_3dp">3dp</dimen>
+    <dimen name="len_120dp">120dp</dimen>
+    <dimen name="len_16dp">16dp</dimen>
+    <dimen name="len_32dp">32dp</dimen>
+</resources>

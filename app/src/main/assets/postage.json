@@ -1,0 +1,164 @@
+[
+  {
+    "id": 100000,
+    "statusId": 1,
+    "status": "Loaded",
+    "type": "Letter",
+    "description": "Description Details",
+    "location": "USA"
+  },
+  {
+    "id": 100002,
+    "statusId": 2,
+    "status": "Sorted",
+    "type": "Letter",
+    "description": "Description Details",
+    "location": "UK"
+  },
+  {
+    "id": 100003,
+    "statusId": 3,
+    "status": "In Transit",
+    "type": "Letter",
+    "description": "Description Details",
+    "location": "GERMANY"
+  },
+  {
+    "id": 100004,
+    "statusId": 4,
+    "status": "Loaded",
+    "type": "Small Parcel",
+    "description": "Description Details",
+    "location": "SOUTH AFRICA"
+  },
+  {
+    "id": 100005,
+    "statusId": 5,
+    "status": "Off Loaded",
+    "type": "Small Parcel",
+    "description": "Description Details",
+    "location": "CHINA"
+  },
+  {
+    "id": 100006,
+    "statusId": 1,
+    "status": "Loaded",
+    "type": "Small Parcel",
+    "description": "Description Details",
+    "location": "SYRIA"
+  },
+  {
+    "id": 100007,
+    "statusId": 2,
+    "status": "Sorted",
+    "type": "Big Parcel",
+    "description": "Description Details",
+    "location": "INDIA"
+  },
+  {
+    "id": 100008,
+    "statusId": 3,
+    "status": "In Transit",
+    "type": "Big Parcel",
+    "description": "Description Details",
+    "location": "PERU"
+  },
+  {
+    "id": 100009,
+    "statusId": 4,
+    "status": "Loaded",
+    "type": "Big Parcel",
+    "description": "Description Details",
+    "location": "EGYPT"
+  },
+  {
+    "id": 100010,
+    "statusId": 5,
+    "status": "Off Loaded",
+    "type": "Carton",
+    "description": "Description Details",
+    "location": "JAPAN"
+  },
+  {
+    "id": 100011,
+    "statusId": 1,
+    "status": "Loaded",
+    "type": "Carton",
+    "description": "Description Details",
+    "location": "CHINA"
+  },
+  {
+    "id": 100012,
+    "statusId": 2,
+    "status": "Sorted",
+    "type": "Carton",
+    "description": "Description Details",
+    "location": "UK"
+  },
+  {
+    "id": 100013,
+    "statusId": 3,
+    "status": "In Transit",
+    "type": "Box",
+    "description": "Description Details",
+    "location": "USA"
+  },
+  {
+    "id": 100014,
+    "statusId": 4,
+    "status": "Loaded",
+    "type": "Box",
+    "description": "Description Details",
+    "location": "FRANCE"
+  },
+  {
+    "id": 100015,
+    "statusId": 5,
+    "status": "Off Loaded",
+    "type": "Box",
+    "description": "Description Details",
+    "location": "COLUMBIA"
+  },
+  {
+    "id": 100016,
+    "statusId": 6,
+    "status": "Loaded",
+    "type": "Parcel",
+    "description": "Description Details",
+    "location": "BRAZIL"
+  },
+  {
+    "id": 100017,
+    "statusId": 7,
+    "status": "Sorted",
+    "type": "Parcel",
+    "description": "Description Details",
+    "location": "CANADA"
+  },
+  {
+    "id": 100018,
+    "statusId": 3,
+    "status": "In Transit",
+    "type": "Parcel",
+    "description": "Description Details",
+    "location": "UK"
+  },
+  {
+    "id": 100019,
+    "statusId": 4,
+    "status": "Loaded",
+    "type": "Parcel",
+    "description": "Description Details",
+    "location": "INDIA"
+  },
+  {
+    "id": 100020,
+    "statusId": 5,
+    "status": "Off Loaded",
+    "type": "Parcel",
+    "description": "Description Details",
+    "location": "AUSTRALIA"
+  }
+]
+
+

@@ -1,0 +1,51 @@
+[
+  {
+    "id": 10001,
+    "groupName": "Type",
+    "groupChildren": [
+      {
+        "id": "11",
+        "name": "Letter"
+      },
+      {
+        "id": "12",
+        "name": "Small Parcel"
+      },
+      {
+        "id": "13",
+        "name": "Big Parcel"
+      }
+    ,
+      {
+        "id": "14",
+        "name": "Carton"
+      },
+      {
+        "id": "15",
+        "name": "Box"
+      }
+    ]
+  },
+  {
+    "id": 10002,
+    "groupName": "Status",
+    "groupChildren": [
+      {
+        "id": "21",
+        "name": "Loaded"
+      },
+      {
+        "id": "22",
+        "name": "Sorted"
+      },
+      {
+        "id": "23",
+        "name": "In Transit"
+      },
+      {
+        "id": "24",
+        "name": "Off Loaded"
+      }
+    ]
+  }
+]

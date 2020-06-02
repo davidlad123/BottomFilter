@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/status_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/len_4dp"
+        android:text="@string/status_id"
+        android:textSize="@dimen/text_16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status_id_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/len_4dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_id"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/len_4dp"
+        android:text="@string/status"
+        android:textSize="@dimen/text_16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_id_value"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/len_4dp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/len_4dp"
+        android:text="@string/location"
+        android:textSize="@dimen/text_16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/location_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_value"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/len_4dp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/len_4dp"
+        android:text="@string/type"
+        android:textSize="@dimen/text_16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/type_value"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_value"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/len_4dp" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type"
+        android:layout_margin="@dimen/len_4dp"
+        android:text="@string/description"
+        android:textSize="@dimen/text_16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_value"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/len_4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_2dp"
+        android:layout_below="@id/description"
+        android:layout_margin="@dimen/len_4dp"
+        android:background="@color/colorAccent" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="filter_current">Filter Variants</string>
+    <string name="filter">Filter</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_caps">CANCEL</string>
+    <string name="confirm_caps">CONFIRM</string>
+    <string name="title_caps">TITLE</string>
+    <string name="text_caps">Some Text</string>
+    <string name="clear">Clear</string>
+    <string name="ok">OK</string>
+</resources>

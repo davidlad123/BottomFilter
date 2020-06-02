@@ -1,0 +1,3 @@
+include ':filterdialog'
+include ':app'
+rootProject.name = "BottomFilter"

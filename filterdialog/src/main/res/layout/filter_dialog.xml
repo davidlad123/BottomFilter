@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    app:cardElevation="@dimen/len_4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minHeight="@dimen/len_120dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/len_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialogTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/len_2dp"
+                android:background="@drawable/rect_accent_bg"
+                android:gravity="center"
+                android:padding="@dimen/len_4dp"
+                android:text="@string/title_caps"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/filter_title_text_size"
+                android:textStyle="bold" />
+
+            <ExpandableListView
+                android:id="@+id/filter_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:foregroundGravity="center_vertical"
+                android:indicatorStart="?android:expandableListPreferredItemIndicatorLeft"
+                android:minHeight="@dimen/len_120dp"
+                android:padding="@dimen/len_16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="@dimen/len_8dp"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:id="@+id/buttonbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/len_8dp">
+
+            <Button
+                android:id="@+id/clear_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/len_3dp"
+                android:minHeight="@dimen/len_1dp"
+                android:text="@string/clear"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/filter_title_text_size"
+                />
+
+            <Button
+                android:id="@+id/negative_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/len_3dp"
+
+                android:minHeight="@dimen/len_1dp"
+                android:text="@string/cancel_caps"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/filter_title_text_size" />
+
+            <Button
+                android:id="@+id/positive_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/len_3dp"
+                android:layout_marginLeft="@dimen/len_3dp"
+                android:layout_marginBottom="@dimen/len_3dp"
+                android:minHeight="@dimen/len_1dp"
+                android:text="@string/ok"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/filter_title_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 10001,
+    "groupName": "Access Type",
+    "groupChildren": [
+      {
+        "id": "11",
+        "name": "Door"
+      },
+      {
+        "id": "12",
+        "name": "Chauffered"
+      },
+      {
+        "id": "13",
+        "name": "Escorted"
+      }
+    ]
+  },
+  {
+    "id": 10002,
+    "groupName": "Priority",
+    "groupChildren": [
+      {
+        "id": "21",
+        "name": "P1"
+      },
+      {
+        "id": "22",
+        "name": "P2"
+      },
+      {
+        "id": "23",
+        "name": "P3"
+      }
+    ]
+  }
+]
