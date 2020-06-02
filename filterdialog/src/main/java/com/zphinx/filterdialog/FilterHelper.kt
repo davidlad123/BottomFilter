@@ -22,6 +22,33 @@ open class FilterHelper {
     fun matchFilter(searchFilter: List<FilterGroup>, filterable: Filterable): Boolean {
 
         var totalMatch = true
+        val resultList = parseResultList(searchFilter, filterable)
+        val subList = resultList.filter {
+            it > 0
+        }
+        totalMatch = getTotalMatches(subList, totalMatch)
+        return totalMatch
+    }
+
+    private fun getTotalMatches(
+        subList: List<Int>,
+        totalMatch: Boolean
+    ): Boolean {
+        var totalMatch1 = totalMatch
+        for (i in 0 until subList.size) {
+            if (i == 0) {
+                totalMatch1 = subList[0] == 1
+            } else {
+                totalMatch1 = totalMatch1 && subList[i] == 1
+            }
+        }
+        return totalMatch1
+    }
+
+    private fun parseResultList(
+        searchFilter: List<FilterGroup>,
+        filterable: Filterable
+    ): MutableList<Int> {
         var resultList = mutableListOf<Int>()
         for (i in 0 until searchFilter.size) {
             val children = searchFilter[i].groupChildren
@@ -31,17 +58,7 @@ open class FilterHelper {
             resultList.add(hasMatch)
 
         }
-        val subList = resultList.filter {
-            it > 0
-        }
-        for (i in 0 until subList.size) {
-            if (i == 0) {
-                totalMatch = subList[0] == 1
-            } else {
-                totalMatch = totalMatch && subList[i] == 1
-            }
-        }
-        return totalMatch
+        return resultList
     }
 
     /**
@@ -58,19 +75,14 @@ open class FilterHelper {
     private fun findMatchingChildren(children: Array<GroupChild>, groupName: String?, filterable: Filterable): Int {
         var isMatch = false
         val resultList = mutableListOf<Int>()
-        for (j in 0 until children.size) {
-            val child = children[j]
-            if (child.isChecked) {
-                isMatch = findFieldValue(groupName, filterable) == child.fieldName ?: child.name
-                resultList.add(if (isMatch) 1 else 2)
-            } else {
-                resultList.add(0)
-            }
-
-        }
+        parseChildrenResult(children, isMatch, groupName, filterable, resultList)
         val subList = resultList.filter {
             it > 0
         }
+        return formatSubResult(subList)
+    }
+
+    private fun formatSubResult(subList: List<Int>): Int {
         return when {
             subList.isEmpty() -> {
                 0
@@ -79,6 +91,26 @@ open class FilterHelper {
                 1
             }
             else -> 2
+        }
+    }
+
+    private fun parseChildrenResult(
+        children: Array<GroupChild>,
+        isMatch: Boolean,
+        groupName: String?,
+        filterable: Filterable,
+        resultList: MutableList<Int>
+    ) {
+        var isMatch1 = isMatch
+        for (j in 0 until children.size) {
+            val child = children[j]
+            if (child.isChecked) {
+                isMatch1 = findFieldValue(groupName, filterable) == child.fieldName ?: child.name
+                resultList.add(if (isMatch1) 1 else 2)
+            } else {
+                resultList.add(0)
+            }
+
         }
     }
 
