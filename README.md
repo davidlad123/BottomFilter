@@ -1,0 +1,1 @@
+This library helps to provide and add a filter to a list of objects shown in your android phone screen. The library allows you to configure filterable data from your code which the users can then use to filter the data displayed on the screen
